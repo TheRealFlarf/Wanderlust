@@ -40,3 +40,5 @@ TrashSlotSaveState.json
 usercache.json
 usernamecache.json
 whitelist.json
+instance.cfg
+minecraft/config/zfastnoise.mixin.properties
