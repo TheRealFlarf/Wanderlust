@@ -1,0 +1,21 @@
+filename = 'Quark-4.1-486.jar'
+name = 'Quark'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '4.1-486'
+
+[download]
+hash = '234742b1fc633e2ca85fc7e141a2d3728177c88ef7ddef9bb1888a606c2e1eb54cd8d5915d63619bbafd0226d893fa043cbb16915caaca210e8dc3ad8bafc105'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/qnQsVE2z/versions/k4NCrqRq/Quark-4.1-486.jar'
+
+[update.modrinth]
+mod-id = 'qnQsVE2z'
+version = 'k4NCrqRq'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'MVARlG2f'
+type = 'REQUIRED'

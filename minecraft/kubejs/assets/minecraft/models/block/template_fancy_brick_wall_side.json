@@ -1,0 +1,58 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/template_wall_side",
+	"textures": {
+		"particle": "#base"
+	},
+	"elements": [
+		{
+			"name": "wall",
+			"from": [5, 10, 0],
+			"to": [11, 14, 8],
+			"faces": {
+				"north": {"uv": [8, 9, 11, 11], "texture": "#wall"},
+				"east": {"uv": [12, 9, 16, 11], "texture": "#wall"},
+				"west": {"uv": [8, 9, 12, 11], "texture": "#wall"},
+				"up": {"uv": [8, 0.5, 12, 3.5], "rotation": 90, "texture": "#wall"},
+				"down": {"uv": [8, 4.5, 12, 7.5], "rotation": 270, "texture": "#wall"}
+			}
+		},
+		{
+			"name": "wall",
+			"from": [5, 2, 0],
+			"to": [11, 6, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -8, 0]},
+			"faces": {
+				"north": {"uv": [8, 13, 11, 15], "texture": "#wall"},
+				"east": {"uv": [12, 13, 16, 15], "texture": "#wall"},
+				"west": {"uv": [8, 13, 12, 15], "texture": "#wall"},
+				"up": {"uv": [8, 0.5, 12, 3.5], "rotation": 90, "texture": "#wall"}
+			}
+		},
+		{
+			"name": "wall",
+			"from": [5, 0, 0],
+			"to": [11, 2, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -12, 0]},
+			"faces": {
+				"north": {"uv": [5, 14, 11, 16], "texture": "#base"},
+				"east": {"uv": [8, 14, 16, 16], "texture": "#base"},
+				"west": {"uv": [0, 14, 8, 16], "texture": "#base"},
+				"down": {"uv": [0, 5, 8, 11], "rotation": 270, "texture": "#base", "cullface": "down"}
+			}
+		},
+		{
+			"name": "post",
+			"from": [6, 5, 2],
+			"to": [10, 11, 6],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 5, 2]},
+			"faces": {
+				"north": {"uv": [5, 4.5, 7, 7.5], "texture": "#wall"},
+				"east": {"uv": [5, 4.5, 7, 7.5], "texture": "#wall"},
+				"south": {"uv": [5, 4.5, 7, 7.5], "texture": "#wall"},
+				"west": {"uv": [5, 4.5, 7, 7.5], "texture": "#wall"}
+			}
+		}
+	]
+}

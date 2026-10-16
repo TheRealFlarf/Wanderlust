@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "woodworks:block/dark_oak_boards_x"
+    },
+    "axis=y": {
+      "model": "woodworks:block/dark_oak_boards"
+    },
+    "axis=z": {
+      "model": "woodworks:block/dark_oak_boards_z"
+    }
+  }
+}

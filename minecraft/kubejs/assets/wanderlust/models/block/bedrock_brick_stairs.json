@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "wanderlust:block/bedrock_bricks",
+    "side": "wanderlust:block/bedrock_bricks",
+    "top": "wanderlust:block/bedrock_bricks"
+  }
+}

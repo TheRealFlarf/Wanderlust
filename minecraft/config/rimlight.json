@@ -1,0 +1,13 @@
+{
+  "ENABLE_RIM_LIGHT": 1,
+  "RIM_COLOR_INFLUENCE": 1.0,
+  "RIM_THICKNESS": 1.0,
+  "RIM_STRENGTH": 0.3,
+  "RIM_DEPTH_THRESHOLD": 0.1,
+  "RIM_MAX_DISTANCE": 64.0,
+  "blockInclusionOverrides": {
+    "minecraft:bamboo_door": true,
+    "minecraft:bamboo_trapdoor": true,
+    "minecraft:sugar_cane": false
+  }
+}

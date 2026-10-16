@@ -1,0 +1,650 @@
+---- Minecraft Crash Report ----
+// I'm sorry, Dave.
+
+Time: 2026-07-22 15:48:03
+Description: Initializing game
+
+net.neoforged.fml.ModLoadingException: Loading errors encountered:
+	- More Tide Fish (moretidefish) encountered an error while dispatching the net.neoforged.neoforge.client.event.EntityRenderersEvent$RegisterLayerDefinitions event
+	  java.lang.NoClassDefFoundError: com/li64/tide/registries/entities/renderers/FishRenderer
+
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:181) ~[loader-4.0.42.jar%23161!/:4.0] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.lambda$postEvent$13(ModLoader.java:358) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModList.forEachModInOrder(ModList.java:174) ~[loader-4.0.42.jar%23161!/:4.0] {re:mixin}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.ModLoader.postEvent(ModLoader.java:358) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at TRANSFORMER/neoforge@21.1.231/net.neoforged.neoforge.client.ClientHooks.initClientHooks(ClientHooks.java:1027) ~[neoforge-21.1.231-universal.jar%23325!/:?] {re:mixin,re:classloading,pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.<init>(Minecraft.java:601) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:214) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) [ForgeWrapper-prism-2025-12-07.jar:prism-2025-12-07] {}
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115) [NewLaunch.jar:?] {}
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) [NewLaunch.jar:?] {}
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) [NewLaunch.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:214) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:classloading,pl:runtimedistcleaner:A}
+-- Initialization --
+Details:
+	Modules: 
+		ADVAPI32.dll:Advanced Windows 32 Base API:10.0.22621.5124 (WinBuild.160101.0800):Microsoft Corporation
+		COMCTL32.dll:User Experience Controls Library:6.10 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPT32.dll:Crypto API32:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTBASE.dll:Base cryptographic API DLL:10.0.22621.4746 (WinBuild.160101.0800):Microsoft Corporation
+		CRYPTSP.dll:Cryptographic Service Provider API:10.0.22621.6060 (WinBuild.160101.0800):Microsoft Corporation
+		CoreMessaging.dll:Microsoft CoreMessaging Dll:10.0.22621.5415 (WinBuild.160101.0800):Microsoft Corporation
+		CoreUIComponents.dll:Microsoft Core UI Components Dll:10.0.22621.5415:Microsoft Corporation
+		DBGHELP.DLL:Windows Image Helper:10.0.22621.5471 (WinBuild.160101.0800):Microsoft Corporation
+		DEVOBJ.dll:Device Information Set DLL:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		DNSAPI.dll:DNS Client API DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		GDI32.dll:GDI Client DLL:10.0.22621.5697 (WinBuild.160101.0800):Microsoft Corporation
+		GLU32.dll:OpenGL Utility Library DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		IMM32.DLL:Multi-User Windows IMM32 API Client DLL:10.0.22621.5697 (WinBuild.160101.0800):Microsoft Corporation
+		IPHLPAPI.DLL:IP Helper API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		KERNEL32.DLL:Windows NT BASE API Client DLL:10.0.22621.5624 (WinBuild.160101.0800):Microsoft Corporation
+		KERNELBASE.dll:Windows NT BASE API Client DLL:10.0.22621.5624 (WinBuild.160101.0800):Microsoft Corporation
+		MMDevApi.dll:MMDevice API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		MSCTF.dll:MSCTF Server DLL:10.0.22621.4317 (WinBuild.160101.0800):Microsoft Corporation
+		MpOav.dll:IOfficeAntiVirus Module:4.18.26060.3008 (df1b0eba8e0e68e7272235d6dea4de3285c715b9):Microsoft Corporation
+		NSI.dll:NSI User-mode interface DLL:10.0.22621.4746 (WinBuild.160101.0800):Microsoft Corporation
+		NTASN1.dll:Microsoft ASN.1 API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		OLEAUT32.dll:OLEAUT32.DLL:10.0.22621.5697 (WinBuild.160101.0800):Microsoft Corporation
+		Oleacc.dll:Active Accessibility Core Component:7.2.22621.5840 (WinBuild.160101.0800):Microsoft Corporation
+		OpenAL.dll:Main implementation library:1.23.1:
+		POWRPROF.dll:Power Profile Helper DLL:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		PSAPI.DLL:Process Status Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		RPCRT4.dll:Remote Procedure Call Runtime:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		SETUPAPI.dll:Windows Setup API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		SHCORE.dll:SHCORE:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		SHELL32.dll:Windows Shell Common Dll:10.0.22621.6060 (WinBuild.160101.0800):Microsoft Corporation
+		UMPDC.dll:User Mode Power Dependency Coordinator:10.0.22621.5124 (WinBuild.160101.0800):Microsoft Corporation
+		USER32.dll:Multi-User Windows USER API Client DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		USERENV.dll:Userenv:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		VCRUNTIME140.dll:Microsoft® C Runtime Library:14.29.30139.0 built by: vcwrkspc:Microsoft Corporation
+		VERSION.dll:Version Checking and File Installation Libraries:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINHTTP.dll:Windows HTTP Services:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINMM.dll:MCI API DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WINSTA.dll:Winstation Library:10.0.22621.6060 (WinBuild.160101.0800):Microsoft Corporation
+		WINTRUST.dll:Microsoft Trust Verification APIs:10.0.22621.6060 (WinBuild.160101.0800):Microsoft Corporation
+		WS2_32.dll:Windows Socket 2.0 32-Bit DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		WTSAPI32.dll:Windows Remote Desktop Session Host Server SDK APIs:10.0.22621.5547 (WinBuild.160101.0800):Microsoft Corporation
+		amsi.dll:Anti-Malware Scan Interface:10.0.22621.3527 (WinBuild.160101.0800):Microsoft Corporation
+		apphelp.dll:Application Compatibility Client Library:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		awt.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		bcrypt.dll:Windows Cryptographic Primitives Library:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		bcryptPrimitives.dll:Windows Cryptographic Primitives Library:10.0.22621.4317 (WinBuild.160101.0800):Microsoft Corporation
+		cfgmgr32.dll:Configuration Manager DLL:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		clbcatq.dll:COM+ Configuration Catalog:2001.12.10941.16384 (WinBuild.160101.0800):Microsoft Corporation
+		combase.dll:Microsoft COM for Windows:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		cryptnet.dll:Crypto Network Related API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dbgcore.DLL:Windows Core Debugging Helpers:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dinput8.dll:Microsoft DirectInput:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		drvstore.dll:Driver Store API:10.0.22621.5413 (WinBuild.160101.0800):Microsoft Corporation
+		dwmapi.dll:Microsoft Desktop Window Manager API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		dxcore.dll:DXCore:10.0.22621.5415 (WinBuild.160101.0800):Microsoft Corporation
+		extnet.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		fwpuclnt.dll:FWP/IPsec User-Mode API:10.0.22621.5697 (WinBuild.160101.0800):Microsoft Corporation
+		gdi32full.dll:GDI Client DLL:10.0.22621.6133 (WinBuild.160101.0800):Microsoft Corporation
+		glfw.dll:GLFW 3.4.0 DLL:3.4.0:GLFW
+		icm32.dll:Microsoft Color Management Module (CMM):10.0.22621.4455 (WinBuild.160101.0800):Microsoft Corporation
+		imagehlp.dll:Windows NT Image Helper:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		inputhost.dll:InputHost:10.0.22621.5415 (WinBuild.160101.0800):Microsoft Corporation
+		java.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		javaw.exe:OpenJDK Platform binary:21.0.3.0:Microsoft
+		jemalloc.dll
+		jimage.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		jli.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		jna14897983346349359114.dll:JNA native library:7.0.0:Java(TM) Native Access (JNA)
+		jsvml.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		jvm.dll:OpenJDK 64-Bit server VM:21.0.3.0:Microsoft
+		kernel.appcore.dll:AppModel API Host:10.0.22621.3958 (WinBuild.160101.0800):Microsoft Corporation
+		lwjgl.dll
+		lwjgl_opengl.dll
+		lwjgl_stb.dll
+		management.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		management_ext.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		mdnsNSP.dll:Bonjour Namespace Provider:3,1,0,1:Apple Inc.
+		msasn1.dll:ASN.1 Runtime APIs:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		mscms.dll:Microsoft Color Matching System DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		msvcp140.dll:Microsoft® C Runtime Library:14.29.30139.0 built by: vcwrkspc:Microsoft Corporation
+		msvcp_win.dll:Microsoft® C Runtime Library:10.0.22621.3374 (WinBuild.160101.0800):Microsoft Corporation
+		msvcrt.dll:Windows NT CRT DLL:7.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		mswsock.dll:Microsoft Windows Sockets 2.0 Service Provider:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		napinsp.dll:E-mail Naming Shim Provider:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		ncrypt.dll:Windows NCrypt Router:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		net.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		nio.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		nlansp_c.dll:NLA Namespace Service Provider DLL:10.0.22621.5331 (WinBuild.160101.0800):Microsoft Corporation
+		ntdll.dll:NT Layer DLL:10.0.22621.5624 (WinBuild.160101.0800):Microsoft Corporation
+		ntmarta.dll:Windows NT MARTA provider:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		nvgpucomp64.dll:NVIDIA GPU Compiler Driver, Version 576.40 :32.0.15.7640:NVIDIA Corporation
+		nvoglv64.dll:NVIDIA Compatible OpenGL ICD:32.0.15.7640:NVIDIA Corporation
+		nvspcap64.dll:NVIDIA Game Proxy 8FileVersion  1:11.0.3.241  8Produc:NVIDIA Corporation  L$FileDescriptio
+		ole32.dll:Microsoft OLE for Windows:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		opengl32.dll:OpenGL Client DLL:10.0.22621.5415 (WinBuild.160101.0800):Microsoft Corporation
+		pdh.dll:Windows Performance Data Helper DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		perfos.dll:Windows System Performance Objects DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		perfproc.dll:Windows System Process Performance Objects DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		pfclient.dll:SysMain Client:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		pnrpnsp.dll:PNRP Name Space Provider:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		profapi.dll:User Profile Basic API:10.0.22621.5840 (WinBuild.160101.0800):Microsoft Corporation
+		rasadhlp.dll:Remote Access AutoDial Helper:10.0.22621.6199 (WinBuild.160101.0800):Microsoft Corporation
+		rsaenh.dll:Microsoft Enhanced Cryptographic Provider:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		sechost.dll:Host for SCM/SDDL/LSA Lookup APIs:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		shlwapi.dll:Shell Light-weight Utility Library:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		sunmscapi.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		textinputframework.dll:"TextInputFramework.DYNLINK":10.0.22621.5983 (WinBuild.160101.0800):Microsoft Corporation
+		ucrtbase.dll:Microsoft® C Runtime Library:10.0.22621.3593 (WinBuild.160101.0800):Microsoft Corporation
+		uxtheme.dll:Microsoft UxTheme Library:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		vcruntime140_1.dll:Microsoft® C Runtime Library:14.29.30139.0 built by: vcwrkspc:Microsoft Corporation
+		verify.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+		win32u.dll:Win32u:10.0.22621.6199 (WinBuild.160101.0800):Microsoft Corporation
+		windows.storage.dll:Microsoft WinRT Storage API:10.0.22621.3527 (WinBuild.160101.0800):Microsoft Corporation
+		winrnr.dll:LDAP RnR Provider DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		wintypes.dll:Windows Base Types DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		wldp.dll:Windows Lockdown Policy:10.0.22621.2506 (WinBuild.160101.0800):Microsoft Corporation
+		wshbth.dll:Windows Sockets Helper DLL:10.0.22621.5840 (WinBuild.160101.0800):Microsoft Corporation
+		wshunix.dll:AF_UNIX Winsock2 Helper DLL:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		xinput1_4.dll:Microsoft Common Controller API:10.0.22621.1 (WinBuild.160101.0800):Microsoft Corporation
+		zip.dll:OpenJDK Platform binary:21.0.3.0:Microsoft
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:214) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) [ForgeWrapper-prism-2025-12-07.jar:prism-2025-12-07] {}
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115) [NewLaunch.jar:?] {}
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) [NewLaunch.jar:?] {}
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) [NewLaunch.jar:?] {}
+
+
+-- Dynamic Lighting --
+Details:
+	Description: This section contains information related to dynamic lighting, this may not be related to your crash.
+	Mode: fancy
+	Dynamic Light Sources: 0
+	Spatial Hash Occupancy: 0 / 1024
+Stacktrace:
+	at TRANSFORMER/lambdynlights_runtime@4.8.8+1.21.1/dev.lambdaurora.lambdynlights.LambDynLights.lambda$onInitializeClient$0(LambDynLights.java:129) ~[lambdynamiclights-4.8.8+1.21.1-neoforge.jar%23598!/:?] {re:mixin,re:classloading}
+	at TRANSFORMER/yumi_mc_core@1.0.0-beta.1+1.21.1/dev.yumi.mc.core.api.CrashReportEvents.lambda$static$0(CrashReportEvents.java:43) ~[yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar%23613!/:?] {re:mixin,re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.CrashReport.handler$ggl000$yumi_mc_core$yumi$onCrashReportCreate(CrashReport.java:527) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:mixin,re:classloading,pl:mixin:APP:yumi_mc_core.mixins.json:crash.CrashReportMixin from mod yumi_mc_core,pl:mixin:APP:mixins.essential.json:crash.MixinCrashReport from mod (unknown),pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.CrashReport.getDetails(CrashReport.java) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:mixin,re:classloading,pl:mixin:APP:yumi_mc_core.mixins.json:crash.CrashReportMixin from mod yumi_mc_core,pl:mixin:APP:mixins.essential.json:crash.MixinCrashReport from mod (unknown),pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.CrashReport.getFriendlyReport(CrashReport.java:110) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:mixin,re:classloading,pl:mixin:APP:yumi_mc_core.mixins.json:crash.CrashReportMixin from mod yumi_mc_core,pl:mixin:APP:mixins.essential.json:crash.MixinCrashReport from mod (unknown),pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.CrashReport.getFriendlyReport(CrashReport.java:115) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:mixin,re:classloading,pl:mixin:APP:yumi_mc_core.mixins.json:crash.CrashReportMixin from mod yumi_mc_core,pl:mixin:APP:mixins.essential.json:crash.MixinCrashReport from mod (unknown),pl:mixin:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.Minecraft.crash(Minecraft.java:876) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.main.Main.main(Main.java:225) ~[client-1.21.1-20240808.144430-srg.jar%23324!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:124) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonClientLaunchHandler.runService(CommonClientLaunchHandler.java:32) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%23161!/:4.0] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%23166!/:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?] {}
+	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?] {}
+	at io.github.zekerzhayard.forgewrapper.installer.Main.main(Main.java:67) [ForgeWrapper-prism-2025-12-07.jar:prism-2025-12-07] {}
+	at org.prismlauncher.launcher.impl.StandardLauncher.launch(StandardLauncher.java:115) [NewLaunch.jar:?] {}
+	at org.prismlauncher.EntryPoint.listen(EntryPoint.java:129) [NewLaunch.jar:?] {}
+	at org.prismlauncher.EntryPoint.main(EntryPoint.java:70) [NewLaunch.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.3, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 2121513328 bytes (2023 MiB) / 4294967296 bytes (4096 MiB) up to 10745806848 bytes (10248 MiB)
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+	Identifier: Intel64 Family 6 Model 167 Stepping 1
+	Microarchitecture: Rocket Lake
+	Frequency (GHz): 2.59
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1050 Ti
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 4096.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.7640
+	Graphics card #1 name: NVIDIA GeForce GTX 1080 Ti
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 11264.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.7640
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 2.13
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 2.13
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 34725.47
+	Virtual memory used (MiB): 23908.39
+	Swap memory total (MiB): 2086.12
+	Swap memory used (MiB): 74.61
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 96443.78, total: 475972.00
+	Space in storage for workdir (MiB): available: 96443.78, total: 475972.00
+	JVM Flags: 3 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xms4096m -Xmx10248m
+	Yumi MC Core: 1.0.0-beta.1+1.21.1
+	Mods: 
+		ali: AdvancedLootInfo v1.12.0
+		amendments: Amendments v1.21-2.0.15
+		appleskin: AppleSkin v3.0.9+mc1.21
+		architects_palette: Architects Palette v1.4.0-beta.5
+		architectury: Architectury v13.0.8
+		attributesetter: AttributeSetter v2.1.1-neoforge
+		balm: Balm v21.0.63
+		berry_good: Berry Good v8.0.1
+		betteradvancedtooltips: Better Advanced Tooltips v2101.1.0-build.1
+		betterclouds: Better Clouds v1.13.5-beta+1.21.1-neoforge.rev.a60dfa0
+		biolith: Biolith v3.0.11
+		blockbox: The Block Box v0.1.3
+		blueprint: Blueprint v8.1.0
+		bookshelf: Bookshelf v21.1.81
+		brewinandchewin: Brewin' And Chewin' v4.4.2
+		c2me: Concurrent Chunk Management Engine v0.3.0+alpha.0.93+1.21.1
+		c2me_base: Concurrent Chunk Management Engine (Base) v0.3.0+alpha.0.93+1.21.1
+		c2me_client_uncapvd: Concurrent Chunk Management Engine (Client/Uncap View Distance) v0.3.0+alpha.0.93+1.21.1
+		c2me_fixes_chunkio_threading_issues: Concurrent Chunk Management Engine (Fixes/Chunk IO/Threading Issues) v0.3.0+alpha.0.93+1.21.1
+		c2me_fixes_general_threading_issues: Concurrent Chunk Management Engine (Fixes/General/Threading Issues) v0.3.0+alpha.0.93+1.21.1
+		c2me_fixes_worldgen_threading_issues: Concurrent Chunk Management Engine (Fixes/WorldGen/Threading Issues) v0.3.0+alpha.0.93+1.21.1
+		c2me_fixes_worldgen_vanilla_bugs: Concurrent Chunk Management Engine (Fixes/WorldGen/Vanilla Bugs) v0.3.0+alpha.0.93+1.21.1
+		c2me_notickvd: Concurrent Chunk Management Engine (No Tick View Distance) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_allocs: Concurrent Chunk Management Engine (Optimizations/Memory Allocations) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_chunkio: Concurrent Chunk Management Engine (Optimizations/Chunk IO) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_dfc: Concurrent Chunk Management Engine (Optimizations/Density Function Compiler) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_math: Concurrent Chunk Management Engine (Optimizations/Math) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_natives_math: Concurrent Chunk Management Engine (Optimizations/Natives Math) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_scheduling: Concurrent Chunk Management Engine (Optimizations/Scheduling) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_worldgen_general: Concurrent Chunk Management Engine (Optimizations/General WorldGen) v0.3.0+alpha.0.93+1.21.1
+		c2me_opts_worldgen_vanilla: Concurrent Chunk Management Engine (Optimizations/Vanilla WorldGen) v0.3.0+alpha.0.93+1.21.1
+		c2me_rewrites_chunk_serializer: Concurrent Chunk Management Engine (Rewrites/Chunk Serializer) v0.3.0+alpha.0.93+1.21.1
+		c2me_rewrites_chunk_system: Concurrent Chunk Management Engine (Rewrites/Chunk System) v0.3.0+alpha.0.93+1.21.1
+		c2me_rewrites_chunkio: Concurrent Chunk Management Engine (Rewrites/Chunk IO) v0.3.0+alpha.0.93+1.21.1
+		c2me_server_utils: Concurrent Chunk Management Engine (Server Utils) v0.3.0+alpha.0.93+1.21.1
+		c2me_threading_lighting: Concurrent Chunk Management Engine (Threading/Lighting) v0.3.0+alpha.0.93+1.21.1
+		caverns_and_chasms: Caverns & Chasms v3.0.0
+		chat_heads: Chat Heads v0.15.1
+		chimes: Chimes v2.1.1
+		chunky: Chunky v1.4.23
+		clean_tooltips: Clean Tooltips v1.1
+		cloth_config: Cloth Config v15 API v15.0.140
+		cloudsettings: CloudSettings v2.0.0.9
+		clumps: Clumps v19.0.0.1
+		collective: Collective v8.22
+		combat_roll: Combat Roll v2.0.6+1.21.1
+		controlling: Controlling v19.0.5
+		coolrain: Cool Rain v1.0.1
+		cosycritters: Cosy Critters & Creepy Crawlies v0.3.2
+		defaulted: Defaulted v1.2.2
+		dimensional_tears: Dimensional Tears v1.21.1-0.2.1
+		dummmmmmy: MmmMmmMmmMmm v1.21-2.0.12
+		dye_depot: Dye Depot v2.1.0
+		dye_the_world: Dye The World! v2.3.2
+		e4mc: e4mc v6.1.0
+		emi: EMI v1.1.24+1.21.1+neoforge
+		enchdesc: EnchantmentDescriptions v21.1.9
+		enderscape: Enderscape v1.0.9
+		entity_model_features: Entity Model Features v3.2.4
+		entity_texture_features: Entity Texture Features v7.1
+		entityculling: EntityCulling v1.10.2
+		entityjs: EntityJS v1.4.5-1.21
+		essential: Essential v1.3.10.9
+		everycomp: Every Compat v1.21-2.11.40
+		exposure: Exposure v1.9.16
+		extensibleenums: Extensible Enums v21.1.1
+		fabric_api_base: Forgified Fabric API Base v0.4.42+d1308ded19
+		fabric_block_view_api_v2: Forgified Fabric BlockView API (v2) v1.0.10+9afaaf8c19
+		fabric_renderer_api_v1: Forgified Fabric Renderer API (v1) v3.4.0+9c40919e19
+		fabric_rendering_data_attachment_v1: Forgified Fabric Rendering Data Attachment (v1) v0.3.48+73761d2e19
+		farmersdelight: Farmer's Delight v1.3.2
+		ferritecore: Ferrite Core v7.0.3
+		fieldguide: Field Guide v1.9.3
+		fragmentum: Fragmentum v2.2.4
+		fusion: Fusion v1.2.12
+		fzzy_config: Fzzy Config v0.7.6+1.21+neoforge
+		gardens_of_the_dead: Gardens of the Dead v5.0.2
+		geckolib: GeckoLib 4 v4.8.4
+		glow: Glow v1.3.0
+		greenhouseconfig: Greenhouse Config v2.2.3+1.21.1
+		greenhouseconfig_night_config: Greenhouse Config - Night Config v1.1.0
+		greenhouseconfig_toml: Greenhouse Config - TOML v1.1.0
+		hiddenrecipebook: Hidden Recipe Book v5.0
+		horsecombatcontrols: Horse Combat Controls v1.21.0-1.0.5
+		hugestructureblocks: Huge Structure Blocks v1.1.6
+		illagerinvasion: Illager Invasion v21.1.6
+		immediatelyfast: ImmediatelyFast v1.6.10+1.21.1
+		immersiveoverlays: Immersive Overlays v1.7.0+1.21.1
+		item_descriptions: Item Descriptions v2.7.2+1.21.1
+		item_obliterator: Item Obliterator v2.3.0
+		kotlinforforge: Kotlin For Forge v5.11.0
+		kubejs: KubeJS v2101.7.2-build.368
+		kubejsdelight: KubeJSDelight v1.1.6
+		kuma_api: KumaAPI v21.0.8
+		lambdynlights: LambDynamicLights v4.8.8+1.21.1
+		lambdynlights_api: LambDynamicLights (API) v4.8.8+1.21.1
+		lambdynlights_runtime: LambDynamicLights (Runtime) v4.8.8+1.21.1
+		lithium: Lithium v0.15.3+mc1.21.1
+		lithostitched: Lithostitched v1.7.9
+		lodestone: Lodestone v1.8.2
+		map_atlases: Map Atlases v1.21-6.6.0
+		minecraft: Minecraft v1.21.1
+		minersdelight: Miners Delight v1.4.5
+		mixed_litter: Mixed Litter v1.2.1
+		modelfix: Model Gap Fix v1.21-1.10
+		moonlight: Moonlight Lib v1.21.1-3.0.14
+		morejs: MoreJS v1.21.1-0.16.0
+		moretidefish: More Tide Fish v1.0.1
+		mousetweaks: Mouse Tweaks v2.26.1
+		mr_dungeons_andtaverns: Dungeons and Taverns v1-v4.4.4
+		mr_dungeons_andtavernsancientcityoverhaul: Dungeons and Taverns Ancient City Overhaul v1-v2
+		mr_dungeons_andtavernsnetherfortressoverhaul: Dungeons and Taverns Nether Fortress Overhaul v1-v2.4
+		mr_dungeons_andtavernsoceanmonumentreplacement: Dungeons and Taverns Ocean Monument Replacement v1-v1.2
+		mr_dungeons_andtavernsstrongholdoverhaul: Dungeons and Taverns Stronghold Overhaul v1-v2.1.f
+		mr_dungeons_andtavernsswamphutoverhaul: Dungeons and Taverns Swamp Hut Overhaul v1-v2
+		mr_dungeons_andtavernswoodlandmansionreplacement: Dungeons and Taverns Woodland Mansion Replacement v1-v1.2
+		mynethersdelight: My Nether's Delight v1.10.2
+		necronomicon: Necronomicon v1.6.0
+		neoforge: NeoForge v21.1.231
+		nerb: Not Enough Recipe Book v0.4.3
+		nochatreports: No Chat Reports v1.21.1-v2.9.1
+		nochatrestrictions: No Chat Restrictions v1.21.11-v1.0.0
+		noisium: Noisium v2.7.0+mc1.21-1.21.1
+		nomansdelight: No Man's Delight v2.2.0
+		nomansland: No Man's Land v1.5.7
+		obscure_tooltips: Obscure Tooltips v4.2.2
+		octolib: OctoLib v0.6.2
+		particlerain: Particle Rain v4.0.0-beta.10
+		paxi: Paxi v1.21.1-NeoForge-5.1.3
+		platform: Platform v1.3.3
+		playeranimator: Player Animator v2.0.4+1.21.1
+		polytone: Polytone v1.21-3.6.7
+		prickle: PrickleMC v21.1.11
+		pride: Pride Lib v1.2.4+1.21.1
+		puzzleslib: Puzzles Lib v21.1.51
+		quark: Quark v4.1-480
+		quarkoddities: Quark Oddities v1.21.1
+		rangedjs: RangedJS v1.3.1-neoforge-1.21.1
+		recyclingarrows: Recycling Arrows v1.6.0-1.21.1-neoforge
+		resourcefullib: Resourceful Lib v3.0.0
+		rhino: Rhino v2101.2.7-build.81
+		runiclib: RunicLib v5.0.6
+		sablecompanion: Sable Companion v1.6.0
+		sawmill: Universal Sawmill v1.21-1.7.1
+		searchables: Searchables v1.0.2
+		shine: Shine v2.0.1+1.21.1-neoforge
+		sodium: Sodium v0.6.13+mc1.21.1
+		spelunkery: Spelunkery v1.21.1-0.4.2
+		spruceui: SpruceUI v6.2.5+1.21.1
+		stonycliffs: Stony Cliffs Are Cool v1.1.2
+		subtle_effects: Subtle Effects v1.14.3
+		supplementaries: Supplementaries v1.21.1-3.6.7
+		tectonic: Tectonic v3.0.22
+		terrablender: TerraBlender v4.1.0.8
+		transition: TRansition v1.0.19
+		trashslot: TrashSlot v21.1.11
+		treechop: HT's TreeChop v0.19.3
+		trender: TRender v1.0.13
+		trimmed: Trimmed v3.0.0
+		vanillabackport: VanillaBackport v1.1.7.8
+		vanity: Vanity v5.0.2
+		wakes: Wakes v1.3.6
+		woodworks: Woodworks v4.0.2
+		worldjs: WorldJS v1.0.0
+		yet_another_config_lib_v3: YetAnotherConfigLib v3.8.2+1.21.1-neoforge
+		yumi_mc_core: Yumi Minecraft Libraries: Foundation v1.0.0-beta.1+1.21.1
+		yungsapi: YUNG's API v1.21.1-NeoForge-5.1.6
+		zeta: Zeta v1.1-40
+	Launched Version: 1.21.1
+	Launcher name: PrismLauncher
+	Backend library: LWJGL version 3.3.3+5
+	Backend API: NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 576.40, NVIDIA Corporation
+	Window size: <not initialized>
+	GFLW Platform: win32
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Is Modded: Definitely; Client brand changed to 'neoforge'
+	Universe: 404
+	Type: Client (map_client.txt)
+	Locale: en_US
+	System encoding: Cp1252
+	File encoding: UTF-8
+	CPU: 12x 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclient
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.42.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.42.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.42.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar essential-loader TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		kotlinforforge@5.11.0
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		AdvancedLootInfo-neoforge-1.21.1-1.12.0.jar       |AdvancedLootInfo              |ali                           |1.12.0              |Manifest: NOSIGNATURE
+		amendments-1.21-2.0.15-neoforge.jar               |Amendments                    |amendments                    |1.21-2.0.15         |Manifest: NOSIGNATURE
+		appleskin-neoforge-mc1.21-3.0.9.jar               |AppleSkin                     |appleskin                     |3.0.9+mc1.21        |Manifest: NOSIGNATURE
+		architects_palette-neoforge-1.21.1-1.4.0-beta.5.ja|Architects Palette            |architects_palette            |1.4.0-beta.5        |Manifest: NOSIGNATURE
+		architectury-13.0.8-neoforge.jar                  |Architectury                  |architectury                  |13.0.8              |Manifest: NOSIGNATURE
+		attributesetter-2.1.1-neoforge.jar                |AttributeSetter               |attributesetter               |2.1.1-neoforge      |Manifest: NOSIGNATURE
+		balm-neoforge-1.21.1-21.0.63.jar                  |Balm                          |balm                          |21.0.63             |Manifest: NOSIGNATURE
+		berry_good-1.21.1-8.0.1.jar                       |Berry Good                    |berry_good                    |8.0.1               |Manifest: NOSIGNATURE
+		better-advanced-tooltips-2101.1.0-build.1.jar     |Better Advanced Tooltips      |betteradvancedtooltips        |2101.1.0-build.1    |Manifest: NOSIGNATURE
+		better-clouds-1.13.5-beta+1.21.1-neoforge.rev.a60d|Better Clouds                 |betterclouds                  |1.13.5-beta+1.21.1-n|Manifest: NOSIGNATURE
+		biolith-neoforge-3.0.11.jar                       |Biolith                       |biolith                       |3.0.11              |Manifest: NOSIGNATURE
+		blueprint-1.21.1-8.1.0.jar                        |Blueprint                     |blueprint                     |8.1.0               |Manifest: NOSIGNATURE
+		bookshelf-neoforge-1.21.1-21.1.81.jar             |Bookshelf                     |bookshelf                     |21.1.81             |Manifest: NOSIGNATURE
+		BrewinAndChewin-neoforge-4.4.2+1.21.1.jar         |Brewin' And Chewin'           |brewinandchewin               |4.4.2               |Manifest: NOSIGNATURE
+		caverns_and_chasms-1.21.1-3.0.0.jar               |Caverns & Chasms              |caverns_and_chasms            |3.0.0               |Manifest: NOSIGNATURE
+		chat_heads-0.15.1-neoforge-1.21.jar               |Chat Heads                    |chat_heads                    |0.15.1              |Manifest: NOSIGNATURE
+		Chimes-v2.1.1-1.21.1-NeoForge.jar                 |Chimes                        |chimes                        |2.1.1               |Manifest: NOSIGNATURE
+		Chunky-NeoForge-1.4.23.jar                        |Chunky                        |chunky                        |1.4.23              |Manifest: NOSIGNATURE
+		clean_tooltips-1.1-neoforge-1.21.1.jar            |Clean Tooltips                |clean_tooltips                |1.1                 |Manifest: NOSIGNATURE
+		cloth-config-15.0.140-neoforge.jar                |Cloth Config v15 API          |cloth_config                  |15.0.140            |Manifest: NOSIGNATURE
+		CloudSettings-1.21-2.0.0.9-neoforge.jar           |CloudSettings                 |cloudsettings                 |2.0.0.9             |Manifest: NOSIGNATURE
+		Clumps-neoforge-1.21.1-19.0.0.1.jar               |Clumps                        |clumps                        |19.0.0.1            |Manifest: NOSIGNATURE
+		collective-1.21.1-8.22.jar                        |Collective                    |collective                    |8.22                |Manifest: NOSIGNATURE
+		combat_roll-neoforge-2.0.6+1.21.1.jar             |Combat Roll                   |combat_roll                   |2.0.6+1.21.1        |Manifest: NOSIGNATURE
+		c2me-neoforge-mc1.21.1-0.3.0+alpha.0.93.jar       |Concurrent Chunk Management En|c2me                          |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-base-mc1.21.1-0.3.0+alpha.0.93-all.jar       |Concurrent Chunk Management En|c2me_base                     |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-client-uncapvd-mc1.21.1-0.3.0+alpha.0.93.jar |Concurrent Chunk Management En|c2me_client_uncapvd           |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-chunkio-threading-issues-mc1.21.1-0.3.0|Concurrent Chunk Management En|c2me_fixes_chunkio_threading_i|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-general-threading-issues-mc1.21.1-0.3.0|Concurrent Chunk Management En|c2me_fixes_general_threading_i|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-worldgen-threading-issues-mc1.21.1-0.3.|Concurrent Chunk Management En|c2me_fixes_worldgen_threading_|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-fixes-worldgen-vanilla-bugs-mc1.21.1-0.3.0+al|Concurrent Chunk Management En|c2me_fixes_worldgen_vanilla_bu|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-notickvd-mc1.21.1-0.3.0+alpha.0.93.jar       |Concurrent Chunk Management En|c2me_notickvd                 |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-chunkio-mc1.21.1-0.3.0+alpha.0.93.jar   |Concurrent Chunk Management En|c2me_opts_chunkio             |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-dfc-mc1.21.1-0.3.0+alpha.0.93.jar       |Concurrent Chunk Management En|c2me_opts_dfc                 |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-worldgen-general-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_opts_worldgen_general    |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-math-mc1.21.1-0.3.0+alpha.0.93.jar      |Concurrent Chunk Management En|c2me_opts_math                |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-allocs-mc1.21.1-0.3.0+alpha.0.93.jar    |Concurrent Chunk Management En|c2me_opts_allocs              |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-natives-math-mc1.21.1-0.3.0+alpha.0.93.j|Concurrent Chunk Management En|c2me_opts_natives_math        |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-scheduling-mc1.21.1-0.3.0+alpha.0.93.jar|Concurrent Chunk Management En|c2me_opts_scheduling          |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-opts-worldgen-vanilla-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_opts_worldgen_vanilla    |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunkio-mc1.21.1-0.3.0+alpha.0.93.ja|Concurrent Chunk Management En|c2me_rewrites_chunkio         |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunk-serializer-mc1.21.1-0.3.0+alph|Concurrent Chunk Management En|c2me_rewrites_chunk_serializer|0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-rewrites-chunk-system-mc1.21.1-0.3.0+alpha.0.|Concurrent Chunk Management En|c2me_rewrites_chunk_system    |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-server-utils-mc1.21.1-0.3.0+alpha.0.93.jar   |Concurrent Chunk Management En|c2me_server_utils             |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		c2me-threading-lighting-mc1.21.1-0.3.0+alpha.0.93.|Concurrent Chunk Management En|c2me_threading_lighting       |0.3.0+alpha.0.93+1.2|Manifest: NOSIGNATURE
+		Controlling-neoforge-1.21.1-19.0.5.jar            |Controlling                   |controlling                   |19.0.5              |Manifest: NOSIGNATURE
+		coolrain-1.21.1-NeoForge-1.0.1.jar                |Cool Rain                     |coolrain                      |1.0.1               |Manifest: NOSIGNATURE
+		cosycritters-0.3.2+1.21.1-neoforge.jar            |Cosy Critters & Creepy Crawlie|cosycritters                  |0.3.2               |Manifest: NOSIGNATURE
+		defaulted-neoforge-1.21.1-1.2.2.jar               |Defaulted                     |defaulted                     |1.2.2               |Manifest: NOSIGNATURE
+		dimensional_tears-neoforge-1.21.1-0.2.1.jar       |Dimensional Tears             |dimensional_tears             |1.21.1-0.2.1        |Manifest: NOSIGNATURE
+		dungeons-and-taverns-v4.4.4.jar                   |Dungeons and Taverns          |mr_dungeons_andtaverns        |1-v4.4.4            |Manifest: NOSIGNATURE
+		dungeons-and-taverns-ancient-city-overhaul-v2.jar |Dungeons and Taverns Ancient C|mr_dungeons_andtavernsancientc|1-v2                |Manifest: NOSIGNATURE
+		dungeons-and-taverns-nether-fortress-overhaul-v2.4|Dungeons and Taverns Nether Fo|mr_dungeons_andtavernsnetherfo|1-v2.4              |Manifest: NOSIGNATURE
+		dungeons-and-taverns-ocean-monument-replacement-v1|Dungeons and Taverns Ocean Mon|mr_dungeons_andtavernsoceanmon|1-v1.2              |Manifest: NOSIGNATURE
+		dungeons-and-taverns-stronghold-overhaul-v2.1.f.ja|Dungeons and Taverns Stronghol|mr_dungeons_andtavernsstrongho|1-v2.1.f            |Manifest: NOSIGNATURE
+		dungeons-and-taverns-swamp-hut-overhaul-v2.jar    |Dungeons and Taverns Swamp Hut|mr_dungeons_andtavernsswamphut|1-v2                |Manifest: NOSIGNATURE
+		dungeons-and-taverns-woodland-mansion-replacement-|Dungeons and Taverns Woodland |mr_dungeons_andtavernswoodland|1-v1.2              |Manifest: NOSIGNATURE
+		dye_depot-2.1.0.jar                               |Dye Depot                     |dye_depot                     |2.1.0               |Manifest: NOSIGNATURE
+		dye_the_world-2.3.2.jar                           |Dye The World!                |dye_the_world                 |2.3.2               |Manifest: NOSIGNATURE
+		e4mc-neoforge-6.1.0.jar                           |e4mc                          |e4mc                          |6.1.0               |Manifest: NOSIGNATURE
+		emi-1.1.24+1.21.1+neoforge.jar                    |EMI                           |emi                           |1.1.24+1.21.1+neofor|Manifest: NOSIGNATURE
+		enchdesc-neoforge-1.21.1-21.1.9.jar               |EnchantmentDescriptions       |enchdesc                      |21.1.9              |Manifest: NOSIGNATURE
+		enderscape-neoforge-1.0.9+mc1.21.1.jar            |Enderscape                    |enderscape                    |1.0.9               |Manifest: NOSIGNATURE
+		entity_model_features-3.2.4-1.21-neoforge.jar     |Entity Model Features         |entity_model_features         |3.2.4               |Manifest: NOSIGNATURE
+		entity_texture_features_1.21-neoforge-7.1.jar     |Entity Texture Features       |entity_texture_features       |7.1                 |Manifest: NOSIGNATURE
+		entityculling-neoforge-1.10.2-mc1.21.1.jar        |EntityCulling                 |entityculling                 |1.10.2              |Manifest: NOSIGNATURE
+		entityjs-1.4.5-1.21.jar                           |EntityJS                      |entityjs                      |1.4.5-1.21          |Manifest: NOSIGNATURE
+		Essential (neoforge_1.21.1).jar                   |Essential                     |essential                     |1.3.10.9            |Manifest: NOSIGNATURE
+		everycomp-1.21-2.11.40-neoforge.jar               |Every Compat                  |everycomp                     |1.21-2.11.40        |Manifest: NOSIGNATURE
+		exposure-neoforge-1.21.1-1.9.16.jar               |Exposure                      |exposure                      |1.9.16              |Manifest: NOSIGNATURE
+		extensibleenums-neoforge-21.1.1.jar               |Extensible Enums              |extensibleenums               |21.1.1              |Manifest: NOSIGNATURE
+		FarmersDelight-1.21.1-1.3.2.jar                   |Farmer's Delight              |farmersdelight                |1.3.2               |Manifest: NOSIGNATURE
+		ferritecore-7.0.3-neoforge.jar                    |Ferrite Core                  |ferritecore                   |7.0.3               |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		fieldguide-neoforge-1.21.1-1.9.3.jar              |Field Guide                   |fieldguide                    |1.9.3               |Manifest: NOSIGNATURE
+		fabric-api-base-0.4.42+d1308ded19.jar             |Forgified Fabric API Base     |fabric_api_base               |0.4.42+d1308ded19   |Manifest: NOSIGNATURE
+		fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar    |Forgified Fabric BlockView API|fabric_block_view_api_v2      |1.0.10+9afaaf8c19   |Manifest: NOSIGNATURE
+		fabric-renderer-api-v1-3.4.0+9c40919e19.jar       |Forgified Fabric Renderer API |fabric_renderer_api_v1        |3.4.0+9c40919e19    |Manifest: NOSIGNATURE
+		fabric-rendering-data-attachment-v1-0.3.48+73761d2|Forgified Fabric Rendering Dat|fabric_rendering_data_attachme|0.3.48+73761d2e19   |Manifest: NOSIGNATURE
+		fragmentum-neoforge-1.21.1-2.2.4.jar              |Fragmentum                    |fragmentum                    |2.2.4               |Manifest: NOSIGNATURE
+		fusion-1.2.12-neoforge-mc1.21.1.jar               |Fusion                        |fusion                        |1.2.12              |Manifest: NOSIGNATURE
+		fzzy_config-0.7.6+1.21+neoforge.jar               |Fzzy Config                   |fzzy_config                   |0.7.6+1.21+neoforge |Manifest: NOSIGNATURE
+		gardens-of-the-dead-neoforge-5.0.2.jar            |Gardens of the Dead           |gardens_of_the_dead           |5.0.2               |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.8.4.jar                |GeckoLib 4                    |geckolib                      |4.8.4               |Manifest: NOSIGNATURE
+		glow-1.3.0.jar                                    |Glow                          |glow                          |1.3.0               |Manifest: NOSIGNATURE
+		greenhouseconfig-2.2.3+1.21.1-neoforge.jar        |Greenhouse Config             |greenhouseconfig              |2.2.3+1.21.1        |Manifest: NOSIGNATURE
+		greenhouseconfig_night_config-1.1.0.jar           |Greenhouse Config - Night Conf|greenhouseconfig_night_config |1.1.0               |Manifest: NOSIGNATURE
+		greenhouseconfig_toml-1.1.0.jar                   |Greenhouse Config - TOML      |greenhouseconfig_toml         |1.1.0               |Manifest: NOSIGNATURE
+		hiddenrecipebook-1.21.1-5.0.jar                   |Hidden Recipe Book            |hiddenrecipebook              |5.0                 |Manifest: NOSIGNATURE
+		horsecombatcontrols-1.21.0-1.0.5.jar              |Horse Combat Controls         |horsecombatcontrols           |1.21.0-1.0.5        |Manifest: NOSIGNATURE
+		TreeChop-1.21.1-neoforge-0.19.3.jar               |HT's TreeChop                 |treechop                      |0.19.3              |Manifest: NOSIGNATURE
+		huge-structure-blocks-neoforge-1.1.6.jar          |Huge Structure Blocks         |hugestructureblocks           |1.1.6               |Manifest: NOSIGNATURE
+		IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar       |Illager Invasion              |illagerinvasion               |21.1.6              |Manifest: NOSIGNATURE
+		ImmediatelyFast-NeoForge-1.6.10+1.21.1.jar        |ImmediatelyFast               |immediatelyfast               |1.6.10+1.21.1       |Manifest: NOSIGNATURE
+		immersiveoverlays-1.7.0+1.21.1-neoforge.jar       |Immersive Overlays            |immersiveoverlays             |1.7.0+1.21.1        |Manifest: NOSIGNATURE
+		item_descriptions-2.7.2+1.21.1-neoforge.jar       |Item Descriptions             |item_descriptions             |2.7.2+1.21.1        |Manifest: NOSIGNATURE
+		Item-Obliterator-NeoForge-MC1.21.1-2.3.0.jar      |Item Obliterator              |item_obliterator              |2.3.0               |Manifest: NOSIGNATURE
+		thedarkcolour.kffmod-5.11.0.jar                   |Kotlin For Forge              |kotlinforforge                |5.11.0              |Manifest: NOSIGNATURE
+		kubejs-neoforge-2101.7.2-build.368.jar            |KubeJS                        |kubejs                        |2101.7.2-build.368  |Manifest: NOSIGNATURE
+		kubejsdelight-1.1.6.jar                           |KubeJSDelight                 |kubejsdelight                 |1.1.6               |Manifest: NOSIGNATURE
+		kuma-api-neoforge-21.0.8+1.21.jar                 |KumaAPI                       |kuma_api                      |21.0.8              |Manifest: NOSIGNATURE
+		lambdynamiclights-4.8.8+1.21.1.jar                |LambDynamicLights             |lambdynlights                 |4.8.8+1.21.1        |Manifest: NOSIGNATURE
+		lambdynamiclights-api-4.8.8+1.21.1-mojmap.jar     |LambDynamicLights (API)       |lambdynlights_api             |4.8.8+1.21.1        |Manifest: NOSIGNATURE
+		lambdynamiclights-4.8.8+1.21.1-neoforge.jar       |LambDynamicLights (Runtime)   |lambdynlights_runtime         |4.8.8+1.21.1        |Manifest: NOSIGNATURE
+		lithium-neoforge-0.15.3+mc1.21.1.jar              |Lithium                       |lithium                       |0.15.3+mc1.21.1     |Manifest: NOSIGNATURE
+		lithostitched-1.7.9-neoforge-21.1.jar             |Lithostitched                 |lithostitched                 |1.7.9               |Manifest: NOSIGNATURE
+		lodestone-1.21.1-1.8.2.jar                        |Lodestone                     |lodestone                     |1.8.2               |Manifest: NOSIGNATURE
+		map_atlases-neoforge-1.21-6.6.0.jar               |Map Atlases                   |map_atlases                   |1.21-6.6.0          |Manifest: NOSIGNATURE
+		client-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		minersdelight-1.21.1-1.4.5.jar                    |Miners Delight                |minersdelight                 |1.4.5               |Manifest: NOSIGNATURE
+		mixed-litter-1.2.1.jar                            |Mixed Litter                  |mixed_litter                  |1.2.1               |Manifest: NOSIGNATURE
+		dummmmmmy-1.21-2.0.12-neoforge.jar                |MmmMmmMmmMmm                  |dummmmmmy                     |1.21-2.0.12         |Manifest: NOSIGNATURE
+		modelfix-1.21-1.10.jar                            |Model Gap Fix                 |modelfix                      |1.21-1.10           |Manifest: NOSIGNATURE
+		moonlight-neoforge-1.21.1-3.0.14.jar              |Moonlight Lib                 |moonlight                     |1.21.1-3.0.14       |Manifest: NOSIGNATURE
+		moretidefish-1.0.1.jar                            |More Tide Fish                |moretidefish                  |1.0.1               |Manifest: NOSIGNATURE
+		morejs-neoforge-1.21.1-0.16.0.jar                 |MoreJS                        |morejs                        |1.21.1-0.16.0       |Manifest: NOSIGNATURE
+		MouseTweaks-neoforge-mc1.21-2.26.1.jar            |Mouse Tweaks                  |mousetweaks                   |2.26.1              |Manifest: NOSIGNATURE
+		MyNethersDelight-1.21.1-1.10.2.jar                |My Nether's Delight           |mynethersdelight              |1.10.2              |Manifest: NOSIGNATURE
+		Necronomicon-NeoForge-1.6.0+1.21.jar              |Necronomicon                  |necronomicon                  |1.6.0               |Manifest: NOSIGNATURE
+		neoforge-21.1.231-universal.jar                   |NeoForge                      |neoforge                      |21.1.231            |Manifest: NOSIGNATURE
+		NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar          |No Chat Reports               |nochatreports                 |1.21.1-v2.9.1       |Manifest: NOSIGNATURE
+		NoChatRestrictions-NeoForge-MC1.21.11-v1.0.0.jar  |No Chat Restrictions          |nochatrestrictions            |1.21.11-v1.0.0      |Manifest: NOSIGNATURE
+		nomansdelight-2.2.0.jar                           |No Man's Delight              |nomansdelight                 |2.2.0               |Manifest: NOSIGNATURE
+		nomansland-1.5.7.jar                              |No Man's Land                 |nomansland                    |1.5.7               |Manifest: NOSIGNATURE
+		noisium-neoforge-2.7.0+mc1.21-1.21.1.jar          |Noisium                       |noisium                       |2.7.0+mc1.21-1.21.1 |Manifest: NOSIGNATURE
+		Not Enough Recipe Book-NEOFORGE-0.4.3+1.21.jar    |Not Enough Recipe Book        |nerb                          |0.4.3               |Manifest: NOSIGNATURE
+		obscure_tooltips-neoforge-1.21.1-4.2.2.jar        |Obscure Tooltips              |obscure_tooltips              |4.2.2               |Manifest: NOSIGNATURE
+		OctoLib-NEOFORGE-0.6.2+1.21.jar                   |OctoLib                       |octolib                       |0.6.2               |Manifest: NOSIGNATURE
+		particlerain-4.0.0-beta.10+1.21.1-neoforge.jar    |Particle Rain                 |particlerain                  |4.0.0-beta.10       |Manifest: NOSIGNATURE
+		Paxi-1.21.1-NeoForge-5.1.3.jar                    |Paxi                          |paxi                          |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		Platform-neoforge-1.21.1-1.3.3.jar                |Platform                      |platform                      |1.3.3               |Manifest: NOSIGNATURE
+		player-animation-lib-forge-2.0.4+1.21.1.jar       |Player Animator               |playeranimator                |2.0.4+1.21.1        |Manifest: NOSIGNATURE
+		polytone-1.21-3.6.7-neoforge.jar                  |Polytone                      |polytone                      |1.21-3.6.7          |Manifest: NOSIGNATURE
+		prickle-neoforge-1.21.1-21.1.11.jar               |PrickleMC                     |prickle                       |21.1.11             |Manifest: NOSIGNATURE
+		pridelib-1.2.4+1.21.1-mojmap.jar                  |Pride Lib                     |pride                         |1.2.4+1.21.1        |Manifest: NOSIGNATURE
+		PuzzlesLib-v21.1.51-1.21.1-NeoForge.jar           |Puzzles Lib                   |puzzleslib                    |21.1.51             |Manifest: NOSIGNATURE
+		Quark-4.1-480.jar                                 |Quark                         |quark                         |4.1-480             |Manifest: NOSIGNATURE
+		QuarkOddities-1.21.1.jar                          |Quark Oddities                |quarkoddities                 |1.21.1              |Manifest: NOSIGNATURE
+		rangedjs-1.3.1-neoforge-1.21.1.jar                |RangedJS                      |rangedjs                      |1.3.1-neoforge-1.21.|Manifest: NOSIGNATURE
+		recyclingarrows-1.6.0-1.21.1-neoforge.jar         |Recycling Arrows              |recyclingarrows               |1.6.0-1.21.1-neoforg|Manifest: NOSIGNATURE
+		resourcefullib-neoforge-1.21-3.0.0.jar            |Resourceful Lib               |resourcefullib                |3.0.0               |Manifest: NOSIGNATURE
+		rhino-2101.2.7-build.81.jar                       |Rhino                         |rhino                         |2101.2.7-build.81   |Manifest: NOSIGNATURE
+		neoforge-runiclib-1.21.1-5.0.6.jar                |RunicLib                      |runiclib                      |5.0.6               |Manifest: NOSIGNATURE
+		sable-companion-common-1.21.1-1.6.0.jar           |Sable Companion               |sablecompanion                |1.6.0               |Manifest: NOSIGNATURE
+		Searchables-neoforge-1.21.1-1.0.2.jar             |Searchables                   |searchables                   |1.0.2               |Manifest: NOSIGNATURE
+		shine-2.0.1+1.21.1-neoforge.jar                   |Shine                         |shine                         |2.0.1+1.21.1-neoforg|Manifest: NOSIGNATURE
+		sodium-neoforge-0.6.13+mc1.21.1.jar               |Sodium                        |sodium                        |0.6.13+mc1.21.1     |Manifest: NOSIGNATURE
+		spelunkery-1.21.1-0.4.2-neoforge.jar              |Spelunkery                    |spelunkery                    |1.21.1-0.4.2        |Manifest: NOSIGNATURE
+		spruceui-6.2.5+1.21.1-mojmap.jar                  |SpruceUI                      |spruceui                      |6.2.5+1.21.1        |Manifest: NOSIGNATURE
+		Stony Cliffs FML v1.1.2.jar                       |Stony Cliffs Are Cool         |stonycliffs                   |1.1.2               |Manifest: NOSIGNATURE
+		SubtleEffects-neoforge-1.21.1-1.14.3.jar          |Subtle Effects                |subtle_effects                |1.14.3              |Manifest: NOSIGNATURE
+		supplementaries-neoforge-1.21.1-3.6.7.jar         |Supplementaries               |supplementaries               |1.21.1-3.6.7        |Manifest: NOSIGNATURE
+		tectonic-3.0.22-neoforge-21.1.jar                 |Tectonic                      |tectonic                      |3.0.22              |Manifest: NOSIGNATURE
+		TerraBlender-neoforge-1.21.1-4.1.0.8.jar          |TerraBlender                  |terrablender                  |4.1.0.8             |Manifest: NOSIGNATURE
+		BlockBox-1.21.1-0.1.3.jar                         |The Block Box                 |blockbox                      |0.1.3               |Manifest: NOSIGNATURE
+		TRansition-1.0.19-1.21.1-neoforge-SNAPSHOT.jar    |TRansition                    |transition                    |1.0.19              |Manifest: NOSIGNATURE
+		trashslot-neoforge-1.21.1-21.1.11.jar             |TrashSlot                     |trashslot                     |21.1.11             |Manifest: NOSIGNATURE
+		TRender-1.0.13-1.21.1-neoforge-SNAPSHOT.jar       |TRender                       |trender                       |1.0.13              |Manifest: NOSIGNATURE
+		trimmed-neo-1.21-3.0.0.jar                        |Trimmed                       |trimmed                       |3.0.0               |Manifest: NOSIGNATURE
+		sawmill-1.21-1.7.2-neoforge.jar                   |Universal Sawmill             |sawmill                       |1.21-1.7.1          |Manifest: NOSIGNATURE
+		VanillaBackport-neoforge-1.21.1-1.1.7.8.jar       |VanillaBackport               |vanillabackport               |1.1.7.8             |Manifest: NOSIGNATURE
+		vanity-neoforge-1.21.1-5.0.3.jar                  |Vanity                        |vanity                        |5.0.2               |Manifest: NOSIGNATURE
+		wakes-1.21.1-NeoForge-1.3.6.jar                   |Wakes                         |wakes                         |1.3.6               |Manifest: NOSIGNATURE
+		woodworks-1.21.1-4.0.2.jar                        |Woodworks                     |woodworks                     |4.0.2               |Manifest: NOSIGNATURE
+		worldjs-1.21.1-1.0.0.jar                          |WorldJS                       |worldjs                       |1.0.0               |Manifest: NOSIGNATURE
+		yet_another_config_lib_v3-3.8.2+1.21.1-neoforge.ja|YetAnotherConfigLib           |yet_another_config_lib_v3     |3.8.2+1.21.1-neoforg|Manifest: NOSIGNATURE
+		yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar |Yumi Minecraft Libraries: Foun|yumi_mc_core                  |1.0.0-beta.1+1.21.1 |Manifest: NOSIGNATURE
+		YungsApi-1.21.1-NeoForge-5.1.6.jar                |YUNG's API                    |yungsapi                      |1.21.1-NeoForge-5.1.|Manifest: NOSIGNATURE
+		Zeta-1.1-40.jar                                   |Zeta                          |zeta                          |1.1-40              |Manifest: NOSIGNATURE
+	Crash Report UUID: d476090e-e8d1-456a-9ab9-2e00b28fd1a5
+	FML: 4.0.42
+	NeoForge: 21.1.231

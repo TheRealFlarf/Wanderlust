@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "wanderlust:block/cut_moonlit_bronze",
+    "side": "wanderlust:block/cut_moonlit_bronze",
+    "top": "wanderlust:block/cut_moonlit_bronze"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "wanderlust:block/templates/beam_horizontal_x",
+  "textures": {
+    "end": "woodworks:block/dark_oak_boards_top",
+    "side": "woodworks:block/dark_oak_boards"
+  }
+}

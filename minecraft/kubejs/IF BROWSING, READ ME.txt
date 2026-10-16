@@ -1,0 +1,4 @@
+Hello, please be wary that a few Resource Pack and Datapack files 
+are generated via script and will be overridden if changed manually. 
+
+To actually modify them, please edit the scripts.

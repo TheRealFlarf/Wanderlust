@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "wanderlust:block/prismarine_cornice_top",
+    "side": "wanderlust:block/prismarine_cornice"
+  }
+}

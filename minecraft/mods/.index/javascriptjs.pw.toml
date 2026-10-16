@@ -1,0 +1,21 @@
+filename = 'JavaScriptJS-2101-1.0.1-fix.jar'
+name = 'JavaScriptJS'
+side = 'server'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'JavaScriptJS-2101-1.0.1-fix.jar'
+
+[download]
+hash = '8026bf06ea922a06f1d79d1c11944e9aa8cccaf3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 8280380
+project-id = 1238318
+
+[[x-prismlauncher-dependencies]]
+addonId = '238086'
+type = 'REQUIRED'

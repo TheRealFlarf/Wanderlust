@@ -1,0 +1,10 @@
+#Allowed Values: FIRST, MIDDLE, LAST
+weaponCoolDownImportance = "MIDDLE"
+disablePickaxesAndShovels = false
+disableAxes = false
+showBlockBreaking = false
+showRangeWeaponDraw = true
+showItemCooldowns = true
+showFoodAndPotions = true
+showSleep = false
+showItemContainerFullness = false
