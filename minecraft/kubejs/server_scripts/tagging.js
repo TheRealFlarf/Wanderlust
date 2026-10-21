@@ -12,11 +12,11 @@ ServerEvents.tags('item', event => {
     )
     event.add('nomansland:admin_item', 
         'moonlight:spawn_box', 
-        'enderscape:healing'
+        // 'enderscape:healing'
     )
     event.add('minecraft:buttons', 
-        'enderscape:polished_end_stone_button',
-        'enderscape:polished_mirestone_button',
+        // 'enderscape:polished_end_stone_button',
+        // 'enderscape:polished_mirestone_button',
 
         'caverns_and_chasms:hold_button',
         'caverns_and_chasms:lift_button',

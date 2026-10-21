@@ -26,9 +26,9 @@ ServerEvents.recipes(event => {
 
         'quark:blossom',
 
-        'enderscape:veiled',
-        'enderscape:celestial',
-        'enderscape:murublight',
+        // 'enderscape:veiled',
+        // 'enderscape:celestial',
+        // 'enderscape:murublight',
 
         'architects_palette:twisted',
 
@@ -187,10 +187,10 @@ ServerEvents.recipes(event => {
     redoButtonRecipe('minecraft:stone', 'minecraft:stone_button')
     redoButtonRecipe('minecraft:polished_blackstone', 'minecraft:polished_blackstone_button')
 
-    redoButtonRecipe('enderscape:polished_end_stone', 'enderscape:polished_end_stone_button')
-    redoButtonRecipe('enderscape:polished_veradite', 'enderscape:polished_veradite_button')
-    redoButtonRecipe('enderscape:polished_mirestone', 'enderscape:polished_mirestone_button')
-    redoButtonRecipe('enderscape:polished_kurodite', 'enderscape:polished_kurodite_button')
+    // redoButtonRecipe('enderscape:polished_end_stone', 'enderscape:polished_end_stone_button')
+    // redoButtonRecipe('enderscape:polished_veradite', 'enderscape:polished_veradite_button')
+    // redoButtonRecipe('enderscape:polished_mirestone', 'enderscape:polished_mirestone_button')
+    // redoButtonRecipe('enderscape:polished_kurodite', 'enderscape:polished_kurodite_button')
 
     redoButtonRecipe('caverns_and_chasms:tin_ingot', 'caverns_and_chasms:hold_button')
     redoButtonRecipe('minecraft:copper_ingot', 'caverns_and_chasms:lift_button')
