@@ -29,6 +29,11 @@
 			driftwood = true
 			river = true
 
+		[types.wood_type.enderscape]
+			veiled = true
+			celestial = true
+			murublight = true
+
 		[types.leaves_type.nomansland]
 			yellow_birch = true
 			autumnal_oak = true

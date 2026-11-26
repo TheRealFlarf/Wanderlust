@@ -56,6 +56,13 @@
 		[types.leaves_type.upgrade_aquatic]
 			river = true
 
+		[types.leaves_type.spicedcider]
+			cacao = true
+			flowering_cacao = true
+			pear = true
+			flowering_pear = true
+			flowering_avocado = true
+
 		[types.cake.nomansland]
 			fruit_cake = true
 
@@ -72,6 +79,10 @@
 			waxed_exposed_copper_lantern = true
 			waxed_weathered_copper_lantern = true
 			waxed_oxidized_copper_lantern = true
+
+		[types.lantern.spicedcider]
+			tin_lantern = true
+			sulfur_lantern = true
 
 #Disables specific entries
 [entries]
@@ -109,6 +120,16 @@
 			railing = true
 			board_wall = true
 			board_slab = true
+
+		[entries.wood_type.blockbox]
+			spiked_palisade = true
+			stripped_palisade = true
+			palisade = true
+			seat = true
+			stripped_spiked_palisade = true
+
+		[entries.wood_type.vanillabackport]
+			shelf = true
 
 		[entries.leaves_type.quark]
 			hedge = true

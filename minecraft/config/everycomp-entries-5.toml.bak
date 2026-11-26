@@ -19,11 +19,6 @@
 			walnut = true
 			willow = true
 
-		[types.wood_type.enderscape]
-			veiled = true
-			celestial = true
-			murublight = true
-
 		[types.wood_type.caverns_and_chasms]
 			azalea = true
 

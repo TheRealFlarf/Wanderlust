@@ -25,10 +25,7 @@ server-resource-packs/
 shaderpacks/
 texturepacks/
 
-instance.cfg
-zfastnoise.mixin.properties
-
-# I genuinely don't understand why some of these exist on my end but whatever
+# I don't understand why some of these exist on my end but whatever
 .qmenu_opened.marker
 command_history.txt
 emi.json
@@ -40,7 +37,5 @@ TrashSlotSaveState.json
 usercache.json
 usernamecache.json
 whitelist.json
-instance.cfg
-minecraft/config/zfastnoise.mixin.properties
 instance.cfg
 mmc-pack.json

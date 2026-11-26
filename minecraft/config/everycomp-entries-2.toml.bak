@@ -29,6 +29,11 @@
 			driftwood = true
 			river = true
 
+		[types.wood_type.enderscape]
+			veiled = true
+			celestial = true
+			murublight = true
+
 		[types.leaves_type.nomansland]
 			yellow_birch = true
 			autumnal_oak = true
@@ -72,6 +77,10 @@
 			waxed_exposed_copper_lantern = true
 			waxed_weathered_copper_lantern = true
 			waxed_oxidized_copper_lantern = true
+
+		[types.lantern.enderscape]
+			void_lantern = true
+			bulb_lantern = true
 
 #Disables specific entries
 [entries]
