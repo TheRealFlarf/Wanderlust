@@ -43,3 +43,4 @@ whitelist.json
 instance.cfg
 minecraft/config/zfastnoise.mixin.properties
 instance.cfg
+mmc-pack.json
