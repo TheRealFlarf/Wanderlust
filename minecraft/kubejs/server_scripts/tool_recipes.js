@@ -1,11 +1,5 @@
 ServerEvents.recipes(event => {
     // ============================================================================== Flint Tools
-    event.remove({ output: "minecraft:flint_and_steel" })
-    event.shapeless(Item.of('minecraft:flint_and_steel'),
-        [
-            '2x minecraft:flint',
-        ]
-    )
 
     event.remove({ output: "minecraft:stone_sword" })
     event.shaped(Item.of('minecraft:stone_sword'),

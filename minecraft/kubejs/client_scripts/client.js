@@ -33,8 +33,6 @@ ClientEvents.lang('en_us', event => {
     event.renameItem('minecraft:stone_sword', 'Flint Sword')
     event.renameItem('minecraft:stone_hoe', 'Flint Hoe')
 
-    event.renameItem('minecraft:flint_and_steel', 'Firestarter')
-
     event.renameItem('minecraft:blaze_powder', 'Smoldering Powder')
 })
 

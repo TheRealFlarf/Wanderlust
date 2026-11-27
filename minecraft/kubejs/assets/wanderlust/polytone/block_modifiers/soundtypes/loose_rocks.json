@@ -1,0 +1,10 @@
+{
+  "targets": [
+    "grounded:earthen_clay",
+    "grounded:grassy_earthen_clay",
+    "grounded:coarse_earthen_clay",
+    "grounded:earthen_clay_path",
+    "grounded:earthen_clay_farmland"
+  ],
+  "sound_type": "copy(caverns_and_chasms:flint_block)"
+}

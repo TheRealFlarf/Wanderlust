@@ -1,0 +1,4 @@
+#How intense the color tinting is.
+# Default: 0.5
+# Range: 0.0 ~ 1.0
+colorIntensity = 0.5

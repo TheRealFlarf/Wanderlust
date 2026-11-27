@@ -1,0 +1,18 @@
+filename = 'biometintedice-1.21.1_1.0.0.jar'
+name = 'Biome Tinted Ice'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.21.1_1.0.0'
+
+[download]
+hash = 'd886894adeb223b0abb20f2cb33bb03dd0495993bca3a379f7b46b0c0b0bb2cf5e5e349bcf9953f8637b0265ddda697cfa81f8187b0676e5a6ccd9e672f32084'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/sGQS9HGc/versions/zCh2BZRy/biometintedice-1.21.1_1.0.0.jar'
+
+[update.modrinth]
+mod-id = 'sGQS9HGc'
+version = 'zCh2BZRy'

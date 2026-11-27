@@ -206,7 +206,7 @@
 		#Combat Test bow fatigue: arrows fly almost straight when loosed within 3 seconds, then lose accuracy and stop critting the longer the bow stays drawn, up to 10 seconds, while the bow wobbles more and more.
 		bowFatigue = true
 		#Skeletons spawn holding a Crude Bow instead of a Bow.
-		crudeBowSkeletons = true
+		crudeBowSkeletons = false
 		#Skeleton horses catch fire in sunlight unless they wear horse armor. Horse armor with durability wears down in the sun instead.
 		skeletonHorsesBurn = false
 		#At night, Evokers come for players on the surface of Dark Forests every few minutes, outside the normal monster cap.
@@ -278,7 +278,7 @@
 		#Seconds of Comfort granted per nutrition point when eating a soup or stew (the spicedcider:comfort_foods tag). 0 disables it.
 		# Default: 0
 		# Range: 0 ~ 600
-		comfortSoupSecondsPerNutrition = 4
+		comfortSoupSecondsPerNutrition = 0
 		#The most seconds of Comfort a single soup or stew can grant.
 		# Default: 180
 		# Range: 0 ~ 3600
@@ -286,7 +286,7 @@
 		#Seconds of Comfort granted when waking up after sleeping through the night. Players lying in bed also have Comfort. 0 disables both.
 		# Default: 0
 		# Range: 0 ~ 3600
-		comfortSleepSeconds = 60
+		comfortSleepSeconds = 0
 
 	[features.horses]
 		#Every horse, donkey and mule gets the same speed and jump strength for its kind instead of random ones. Applies to entities in the spicedcider:static_horse_stats tag.

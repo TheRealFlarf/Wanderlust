@@ -1,5 +1,5 @@
 #Lets nearby entities press foliage aside and leave directional motion wakes on the client.
-enableFoliageInteractivity = true
+enableFoliageInteractivity = false
 #Scales how strongly foliage reacts to nearby entities.
 # Default: 1.0
 # Range: 0.0 ~ 2.0
@@ -23,7 +23,7 @@ enableWindStreaks = true
 #Scales overall ambient wind streak, drifting leaf, and flower petal density.
 # Default: 1.0
 # Range: 0.0 ~ 4.0
-windStreakVisibility = 1.0
+windStreakVisibility = 4.0
 #Scales how many wind lines spawn.
 # Default: 1.0
 # Range: 0.0 ~ 4.0
@@ -199,7 +199,7 @@ enableWindLeafSway = true
 #Scales the strength of wind-driven foliage sway.
 # Default: 1.0
 # Range: 0.0 ~ 2.0
-windFoliageSwayStrength = 1.0
+windFoliageSwayStrength = 0.6000000000000001
 #Sets how far above the bottom of plant-like foliage wind sway starts, in block units.
 # Default: 0.6
 # Range: 0.0 ~ 1.0
@@ -214,7 +214,7 @@ foliageSteppedRate = 10.0
 #Weather wind power while the weather is clear. Affects foliage gust intensity, wind streak density, and wind smoke.
 # Default: 0.25
 # Range: 0.0 ~ 4.0
-clearWeatherWindPower = 0.25
+clearWeatherWindPower = 0.15000000000000002
 #Weather wind power at full rain. Affects foliage gust intensity, wind streak density, and wind smoke.
 # Default: 0.75
 # Range: 0.0 ~ 4.0
